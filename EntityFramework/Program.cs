@@ -21,6 +21,11 @@ try
     builder.Services.AddRazorPages();
     builder.Services.AddDbContext<EntityFrameworkContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("EntityFrameworkContext") ?? throw new InvalidOperationException("Connection string 'EntityFrameworkContext' not found.")));
+
+    builder.Host.UseSerilog((ctx, lc) => lc
+        .WriteTo.Console()
+        .WriteTo.Seq("http://localhost:5341"));
+
     var app = builder.Build();
     var logger = app.Services.GetRequiredService<ILogger<Program>>();
     // Configure the HTTP request pipeline.
