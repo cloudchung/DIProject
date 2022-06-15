@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rkmUh85O2MYGSBAl/irZrfk4u+tgsY3u+ZOi0j+bnqw=",
+  "Source": "DIDapperAPI",
+  "BasePath": "_content/DIDapperAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
