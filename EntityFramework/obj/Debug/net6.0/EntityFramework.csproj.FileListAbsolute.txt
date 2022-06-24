@@ -1,3 +1,4 @@
+C:\DIDapperAPI\EntityFramework\bin\Debug\net6.0\web.config
 C:\DIDapperAPI\EntityFramework\bin\Debug\net6.0\appsettings.Development.json
 C:\DIDapperAPI\EntityFramework\bin\Debug\net6.0\appsettings.json
 C:\DIDapperAPI\EntityFramework\bin\Debug\net6.0\EntityFramework.staticwebassets.runtime.json

@@ -3,6 +3,7 @@ using DIDapperAPI.Model;
 using DIDapperAPI.service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace DIDapperAPI.Controllers
 {
@@ -13,15 +14,21 @@ namespace DIDapperAPI.Controllers
     {
         private readonly MovieService _movieservice;
         private readonly ILogger _logger;
+        private readonly AppSetting _appsetting;
+        private readonly TestSection _testsection;
         public MovieController(
-            MovieService movieService , ILogger<MovieController> logger) 
+            MovieService movieService , ILogger<MovieController> logger
+            ,AppSetting appSetting,TestSection testSection,IMemoryCache cache) 
         {
             _movieservice = movieService;
             _logger= logger;
+            _appsetting = appSetting;
+            _testsection = testSection;
         }
         [HttpGet(Name = "Movie")]
         public IEnumerable<Movie> GetList()
         {
+            _logger.LogWarning($"測試環境變數_Id_{_testsection.Id}環境變數Name_{_testsection.Name}");
             return _movieservice.GetList();
         }
         //查詢資料Detail
@@ -80,5 +87,6 @@ namespace DIDapperAPI.Controllers
             _movieservice.Delete(id);
             return Ok();
         }
+
     }
 }

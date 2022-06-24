@@ -17,5 +17,10 @@ namespace DIDapperAPI.Model
     {
         public string ConnectionString { get; set; } = String.Empty;
     }
+
+    public class Cache
+    {
+        public string DateTime { get; set; } = String.Empty;
+    }
 }
 
