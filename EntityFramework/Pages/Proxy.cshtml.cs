@@ -13,20 +13,7 @@ namespace EntityFramework.Pages
             _logger = logger;
         }
         public IList<Movie> Movie { get; set; } = default!;
-        //public async Task OnGetAsync()
-        //{
-        //    List<Movie> reservationList = new List<Movie>();
-        //    using (var httpClient = new HttpClient())
-        //    {
-        //        using (var response = await httpClient.GetAsync("https://localhost:7057/Movie"))
-        //        {
-        //            string apiResponse = await response.Content.ReadAsStringAsync();
-        //            reservationList = JsonConvert.DeserializeObject<List<Movie>>(apiResponse);
-
-        //        }
-        //    }
-        //}
-
+   
         public async Task<IActionResult> OnGet()
         {
             List<Movie> reservationList = new List<Movie>();
