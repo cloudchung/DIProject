@@ -48,9 +48,21 @@
               "target": "Package",
               "version": "[2.0.123, )"
             },
+            "Foundatio": {
+              "target": "Package",
+              "version": "[10.5.0, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.43, )"
+            },
             "Microsoft.AspNetCore.Diagnostics": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.Azure.Cosmos": {
+              "target": "Package",
+              "version": "[3.28.0, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
@@ -70,9 +82,17 @@
               "target": "Package",
               "version": "[6.0.5, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
             "Microsoft.Extensions.Configuration.Binder": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.15.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -97,6 +117,10 @@
             "Serilog.Sinks.Seq": {
               "target": "Package",
               "version": "[5.1.1, )"
+            },
+            "StackExchange.Redis.Extensions.Core": {
+              "target": "Package",
+              "version": "[8.0.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIDapperAPI", "DIDapperAPI\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{05FD2DA8-3129-46D7-B225-0B4A174CBB6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisAPI", "RedisAPI\RedisAPI.csproj", "{E7A5CD54-460A-411A-8299-CF471A4D61D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{05FD2DA8-3129-46D7-B225-0B4A174CBB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05FD2DA8-3129-46D7-B225-0B4A174CBB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05FD2DA8-3129-46D7-B225-0B4A174CBB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7A5CD54-460A-411A-8299-CF471A4D61D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A5CD54-460A-411A-8299-CF471A4D61D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A5CD54-460A-411A-8299-CF471A4D61D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A5CD54-460A-411A-8299-CF471A4D61D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

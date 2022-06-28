@@ -7,6 +7,12 @@ using DIDapperAPI.Model;
 using DIDapperAPI;
 using System.Configuration;
 using System.Net;
+using Microsoft.EntityFrameworkCore.Storage;
+using StackExchange.Redis;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
+using StackExchange.Redis.Extensions.Core.Configuration;
+using Foundatio.Serializer;
 
 var builder = WebApplication.CreateBuilder(args);
 //var connectionString = builder.Configuration.GetConnectionString("DapperContext");
@@ -57,6 +63,14 @@ try
     builder.Services.AddRazorPages();
     builder.Services.AddScoped<MovieService>();
     builder.Services.AddMemoryCache(); //添加MemoryCache組件
+
+    //設置redis參數
+    builder.Services.AddStackExchangeRedisCache(options =>
+    {
+        options.Configuration = "127.0.0.1:6379,password=123456,ssl=True,abortConnect=False";
+    });
+    //builder.Services.Add(ServiceDescriptor.Singleton<IDistributedCache, RedisCache>());
+
 
     builder.Services.AddControllers();
 
