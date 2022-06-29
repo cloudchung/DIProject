@@ -10,7 +10,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["DIDapperAPI.csproj", "DIDapperAPI/"]
+COPY ["DIDapperAPI/DIDapperAPI.csproj", "DIDapperAPI/"]
 RUN dotnet restore "DIDapperAPI/DIDapperAPI.csproj"
 COPY . .
 WORKDIR "/src/DIDapperAPI"
