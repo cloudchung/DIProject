@@ -11,8 +11,8 @@ namespace RedisAPI
 
         public ConnectionMultiplexer getConn() 
         {
-            var conn = ConnectionMultiplexer.Connect("172.19.20.168:6379");
-            ConfigurationOptions config = ConfigurationOptions.Parse("172.19.20.168:6379,allowAdmin=true");
+            var conn = ConnectionMultiplexer.Connect("172.19.20.171:6379");
+            ConfigurationOptions config = ConfigurationOptions.Parse("172.19.20.171:6379,allowAdmin=true");
             var conn2 = ConnectionMultiplexer.Connect(config.ToString());
             return conn2;
         }

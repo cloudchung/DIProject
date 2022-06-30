@@ -1,3 +1,12 @@
+C:\app\build\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\app\build\Cosmos.CRTCompat.dll
+C:\app\build\appsettings.Development.json
+C:\app\build\appsettings.json
+C:\app\build\DIDapperAPI.exe
+C:\app\build\DIDapperAPI.deps.json
+C:\app\build\DIDapperAPI.runtimeconfig.json
+C:\app\build\DIDapperAPI.dll
+C:\app\build\DIDapperAPI.pdb
 C:\DIDapperAPI\DIDapperAPI\bin\Release\net6.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
 C:\DIDapperAPI\DIDapperAPI\bin\Release\net6.0\Cosmos.CRTCompat.dll
 C:\DIDapperAPI\DIDapperAPI\bin\Release\net6.0\appsettings.Development.json
@@ -302,12 +311,3 @@ C:\DIDapperAPI\DIDapperAPI\obj\Release\net6.0\refint\DIDapperAPI.dll
 C:\DIDapperAPI\DIDapperAPI\obj\Release\net6.0\DIDapperAPI.pdb
 C:\DIDapperAPI\DIDapperAPI\obj\Release\net6.0\DIDapperAPI.genruntimeconfig.cache
 C:\DIDapperAPI\DIDapperAPI\obj\Release\net6.0\ref\DIDapperAPI.dll
-C:\app\build\Microsoft.Azure.Cosmos.ServiceInterop.dll
-C:\app\build\Cosmos.CRTCompat.dll
-C:\app\build\appsettings.Development.json
-C:\app\build\appsettings.json
-C:\app\build\DIDapperAPI.exe
-C:\app\build\DIDapperAPI.deps.json
-C:\app\build\DIDapperAPI.runtimeconfig.json
-C:\app\build\DIDapperAPI.dll
-C:\app\build\DIDapperAPI.pdb

@@ -19,7 +19,7 @@ namespace EntityFramework.Pages
             List<Movie> reservationList = new List<Movie>();
             using (var httpClient = new HttpClient())
             {
-                using (var response = await httpClient.GetAsync("https://localhost:7057/Movie"))
+                using (var response = await httpClient.GetAsync("http://172.19.20.171:9001/Movie"))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     reservationList = JsonConvert.DeserializeObject<List<Movie>>(apiResponse);
